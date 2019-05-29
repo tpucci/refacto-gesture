@@ -1,0 +1,11 @@
+{
+  "name": "refacto-gesture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tpucci/refacto-gesture.git",
+  "author": "Thomas Pucci <thomas.lb.pucci@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
