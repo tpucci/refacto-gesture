@@ -1,15 +1,16 @@
-function main(quantity, itemPrice) {
-  const order = {
-    quantity,
-    itemPrice
-  };
+function main(order) {
   const basePrice = getBasePrice(order);
   const quantityDiscount = getDiscountPrice(order);
   const shippingPrice = getShippingPrice(order);
   return basePrice - quantityDiscount + shippingPrice;
 }
 
-console.log(main(5, 8));
+console.log(
+  main({
+    quantity: 5,
+    itemPrice: 8
+  })
+);
 
 function getShippingPrice(order) {
   return Math.min(order.quantity * order.itemPrice * 0.1, 100);
