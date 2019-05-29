@@ -1,4 +1,4 @@
-function main(order) {
+function getPrice(order) {
   const basePrice = getBasePrice(order);
   const quantityDiscount = getDiscountPrice(order);
   const shippingPrice = getShippingPrice(order);
@@ -6,7 +6,7 @@ function main(order) {
 }
 
 console.log(
-  main({
+  getPrice({
     quantity: 5,
     itemPrice: 8
   })
@@ -24,4 +24,4 @@ function getBasePrice(order) {
   return order.quantity * order.itemPrice;
 }
 
-module.exports = { main };
+module.exports = { getPrice };

@@ -1,9 +1,9 @@
-const { main } = require("./main");
+const { getPrice } = require("./main");
 
-describe("[function] main", () => {
+describe("[function] getPrice", () => {
   it("computes the total price", () => {
     expect(
-      main({
+      getPrice({
         quantity: 10,
         itemPrice: 5
       })
@@ -11,7 +11,7 @@ describe("[function] main", () => {
   });
   it("computes the total price with discount", () => {
     expect(
-      main({
+      getPrice({
         quantity: 1000,
         itemPrice: 5
       })
