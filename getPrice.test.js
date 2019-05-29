@@ -1,4 +1,4 @@
-const { getPrice } = require("./main");
+const { getPrice } = require("./getPrice");
 
 describe("[function] getPrice", () => {
   it("computes the total price", () => {
